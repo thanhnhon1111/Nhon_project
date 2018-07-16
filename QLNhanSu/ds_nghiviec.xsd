@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ds_nghiviec" targetNamespace="http://tempuri.org/ds_nghiviec.xsd" xmlns:mstns="http://tempuri.org/ds_nghiviec.xsd" xmlns="http://tempuri.org/ds_nghiviec.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="QLNSConnectionString2" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="QLNSConnectionString2 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.QLNhanSu.Properties.Settings.GlobalReference.Default.QLNSConnectionString2" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="QLNSConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="QLNSConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.QLNhanSu.Properties.Settings.GlobalReference.Default.QLNSConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Report_NhanVien_nghiviecTableAdapter" GeneratorDataComponentClassName="Report_NhanVien_nghiviecTableAdapter" Name="Report_NhanVien_nghiviec" UserDataComponentName="Report_NhanVien_nghiviecTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="QLNSConnectionString1 (Settings)" DbObjectName="QLNS.dbo.Report_NhanVien_nghiviec" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        Report_NhanVien_nghiviec.*
+FROM            Report_NhanVien_nghiviec</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="MaNV" DataSetColumn="MaNV" />
+              <Mapping SourceColumn="ten" DataSetColumn="ten" />
+              <Mapping SourceColumn="ngay" DataSetColumn="ngay" />
+              <Mapping SourceColumn="hoten" DataSetColumn="hoten" />
+              <Mapping SourceColumn="GioiTinh" DataSetColumn="GioiTinh" />
+              <Mapping SourceColumn="NgaySinh" DataSetColumn="NgaySinh" />
+              <Mapping SourceColumn="TenBoPhan" DataSetColumn="TenBoPhan" />
+              <Mapping SourceColumn="tenchucvu" DataSetColumn="tenchucvu" />
+              <Mapping SourceColumn="NgayLamViec" DataSetColumn="NgayLamViec" />
+              <Mapping SourceColumn="HKTT" DataSetColumn="HKTT" />
+              <Mapping SourceColumn="thang" DataSetColumn="thang" />
+              <Mapping SourceColumn="nam" DataSetColumn="nam" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ds_nghiviec" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ds_nghiviec" msprop:Generator_UserDSName="ds_nghiviec">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Report_NhanVien_nghiviec" msprop:Generator_TableClassName="Report_NhanVien_nghiviecDataTable" msprop:Generator_TableVarName="tableReport_NhanVien_nghiviec" msprop:Generator_TablePropName="Report_NhanVien_nghiviec" msprop:Generator_RowDeletingName="Report_NhanVien_nghiviecRowDeleting" msprop:Generator_UserTableName="Report_NhanVien_nghiviec" msprop:Generator_RowChangingName="Report_NhanVien_nghiviecRowChanging" msprop:Generator_RowEvHandlerName="Report_NhanVien_nghiviecRowChangeEventHandler" msprop:Generator_RowDeletedName="Report_NhanVien_nghiviecRowDeleted" msprop:Generator_RowEvArgName="Report_NhanVien_nghiviecRowChangeEvent" msprop:Generator_RowChangedName="Report_NhanVien_nghiviecRowChanged" msprop:Generator_RowClassName="Report_NhanVien_nghiviecRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MaNV" msprop:Generator_ColumnVarNameInTable="columnMaNV" msprop:Generator_ColumnPropNameInRow="MaNV" msprop:Generator_ColumnPropNameInTable="MaNVColumn" msprop:Generator_UserColumnName="MaNV">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ten" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnten" msprop:Generator_ColumnPropNameInRow="ten" msprop:Generator_ColumnPropNameInTable="tenColumn" msprop:Generator_UserColumnName="ten" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ngay" msprop:Generator_ColumnVarNameInTable="columnngay" msprop:Generator_ColumnPropNameInRow="ngay" msprop:Generator_ColumnPropNameInTable="ngayColumn" msprop:Generator_UserColumnName="ngay" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="hoten" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnhoten" msprop:Generator_ColumnPropNameInRow="hoten" msprop:Generator_ColumnPropNameInTable="hotenColumn" msprop:Generator_UserColumnName="hoten" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="41" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="GioiTinh" msprop:Generator_ColumnVarNameInTable="columnGioiTinh" msprop:Generator_ColumnPropNameInRow="GioiTinh" msprop:Generator_ColumnPropNameInTable="GioiTinhColumn" msprop:Generator_UserColumnName="GioiTinh" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NgaySinh" msprop:Generator_ColumnVarNameInTable="columnNgaySinh" msprop:Generator_ColumnPropNameInRow="NgaySinh" msprop:Generator_ColumnPropNameInTable="NgaySinhColumn" msprop:Generator_UserColumnName="NgaySinh" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TenBoPhan" msprop:Generator_ColumnVarNameInTable="columnTenBoPhan" msprop:Generator_ColumnPropNameInRow="TenBoPhan" msprop:Generator_ColumnPropNameInTable="TenBoPhanColumn" msprop:Generator_UserColumnName="TenBoPhan" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="tenchucvu" msprop:Generator_ColumnVarNameInTable="columntenchucvu" msprop:Generator_ColumnPropNameInRow="tenchucvu" msprop:Generator_ColumnPropNameInTable="tenchucvuColumn" msprop:Generator_UserColumnName="tenchucvu" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NgayLamViec" msprop:Generator_ColumnVarNameInTable="columnNgayLamViec" msprop:Generator_ColumnPropNameInRow="NgayLamViec" msprop:Generator_ColumnPropNameInTable="NgayLamViecColumn" msprop:Generator_UserColumnName="NgayLamViec" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="HKTT" msprop:Generator_ColumnVarNameInTable="columnHKTT" msprop:Generator_ColumnPropNameInRow="HKTT" msprop:Generator_ColumnPropNameInTable="HKTTColumn" msprop:Generator_UserColumnName="HKTT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="70" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="thang" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnthang" msprop:Generator_ColumnPropNameInRow="thang" msprop:Generator_ColumnPropNameInTable="thangColumn" msprop:Generator_UserColumnName="thang" type="xs:int" minOccurs="0" />
+              <xs:element name="nam" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnnam" msprop:Generator_ColumnPropNameInRow="nam" msprop:Generator_ColumnPropNameInTable="namColumn" msprop:Generator_UserColumnName="nam" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Report_NhanVien_nghiviec" />
+      <xs:field xpath="mstns:MaNV" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ds_sapkiHD" targetNamespace="http://tempuri.org/ds_sapkiHD.xsd" xmlns:mstns="http://tempuri.org/ds_sapkiHD.xsd" xmlns="http://tempuri.org/ds_sapkiHD.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="QLNSConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="QLNSConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.QLNhanSu.Properties.Settings.GlobalReference.Default.QLNSConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Report_Nhanvien_saphetHDTableAdapter" GeneratorDataComponentClassName="Report_Nhanvien_saphetHDTableAdapter" Name="Report_Nhanvien_saphetHD" UserDataComponentName="Report_Nhanvien_saphetHDTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="QLNSConnectionString1 (Settings)" DbObjectName="QLNS.dbo.Report_Nhanvien_saphetHD" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        Report_Nhanvien_saphetHD.*
+FROM            Report_Nhanvien_saphetHD</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="MaNV" DataSetColumn="MaNV" />
+              <Mapping SourceColumn="ten" DataSetColumn="ten" />
+              <Mapping SourceColumn="TenBoPhan" DataSetColumn="TenBoPhan" />
+              <Mapping SourceColumn="tenchucvu" DataSetColumn="tenchucvu" />
+              <Mapping SourceColumn="sohd" DataSetColumn="sohd" />
+              <Mapping SourceColumn="ngayhd" DataSetColumn="ngayhd" />
+              <Mapping SourceColumn="ngayhh" DataSetColumn="ngayhh" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ds_sapkiHD" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ds_sapkiHD" msprop:Generator_UserDSName="ds_sapkiHD">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Report_Nhanvien_saphetHD" msprop:Generator_TableClassName="Report_Nhanvien_saphetHDDataTable" msprop:Generator_TableVarName="tableReport_Nhanvien_saphetHD" msprop:Generator_TablePropName="Report_Nhanvien_saphetHD" msprop:Generator_RowDeletingName="Report_Nhanvien_saphetHDRowDeleting" msprop:Generator_UserTableName="Report_Nhanvien_saphetHD" msprop:Generator_RowChangingName="Report_Nhanvien_saphetHDRowChanging" msprop:Generator_RowEvHandlerName="Report_Nhanvien_saphetHDRowChangeEventHandler" msprop:Generator_RowDeletedName="Report_Nhanvien_saphetHDRowDeleted" msprop:Generator_RowEvArgName="Report_Nhanvien_saphetHDRowChangeEvent" msprop:Generator_RowChangedName="Report_Nhanvien_saphetHDRowChanged" msprop:Generator_RowClassName="Report_Nhanvien_saphetHDRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MaNV" msprop:Generator_ColumnVarNameInTable="columnMaNV" msprop:Generator_ColumnPropNameInRow="MaNV" msprop:Generator_ColumnPropNameInTable="MaNVColumn" msprop:Generator_UserColumnName="MaNV">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ten" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnten" msprop:Generator_ColumnPropNameInRow="ten" msprop:Generator_ColumnPropNameInTable="tenColumn" msprop:Generator_UserColumnName="ten" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="41" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TenBoPhan" msprop:Generator_ColumnVarNameInTable="columnTenBoPhan" msprop:Generator_ColumnPropNameInRow="TenBoPhan" msprop:Generator_ColumnPropNameInTable="TenBoPhanColumn" msprop:Generator_UserColumnName="TenBoPhan" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="tenchucvu" msprop:Generator_ColumnVarNameInTable="columntenchucvu" msprop:Generator_ColumnPropNameInRow="tenchucvu" msprop:Generator_ColumnPropNameInTable="tenchucvuColumn" msprop:Generator_UserColumnName="tenchucvu" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="sohd" msprop:Generator_ColumnVarNameInTable="columnsohd" msprop:Generator_ColumnPropNameInRow="sohd" msprop:Generator_ColumnPropNameInTable="sohdColumn" msprop:Generator_UserColumnName="sohd" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ngayhd" msprop:Generator_ColumnVarNameInTable="columnngayhd" msprop:Generator_ColumnPropNameInRow="ngayhd" msprop:Generator_ColumnPropNameInTable="ngayhdColumn" msprop:Generator_UserColumnName="ngayhd" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ngayhh" msprop:Generator_ColumnVarNameInTable="columnngayhh" msprop:Generator_ColumnPropNameInRow="ngayhh" msprop:Generator_ColumnPropNameInTable="ngayhhColumn" msprop:Generator_UserColumnName="ngayhh" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Report_Nhanvien_saphetHD" />
+      <xs:field xpath="mstns:MaNV" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
